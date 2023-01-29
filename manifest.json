@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Simpler Eurostat",
+  "version": "1.4",
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "52.0",
+      "id":"testaddon@me.org"
+    }
+  },
+  "description": "This add-on declutters the Eurostat data browser interface.",
+  
+  "permissions": [
+  "*://*.ec.europa.eu/eurostat/databrowser/view/*"
+  ],
+	
+ "content_scripts": [
+    {
+		"matches": ["*://*.ec.europa.eu/eurostat/databrowser/view/*"],
+	"js": ["content.js"],
+	"css": ["simplerEurostat.css"]
+  }
+  ]
+}

@@ -1,0 +1,27 @@
+#app-header {display: none;}
+#toast-container {display: none;}
+.breadcrumb {display:none;}
+div#top-menu {display:none;}
+div#mainContent ui-view {display: grid;}
+#app-footer.footer.compact {position:relative; }
+ul.nav {display:none;}
+html.no-js body#body.isNotAdmin div#app-wrapper.contract div#main div#wrapper.container-fluid div#main-content {
+padding-left:5px;
+padding-right:5px;}
+[ng-controller="HeaderCtrl as header"]{display:none;}
+div[ng-if="presentation"] {order: 1;}
+div[ng-if="!loadingContent"] {order:2;}
+ng-include {order:3;}
+h3.infobox__title  {display:none;}
+/* Some test */
+/*button[ng-click="sharePresentation()"]:after {visibility: visible; content: "Reference";}
+
+
+/*#estatlayout {display:none;}
+#estatformat {display:none;}
+.ux-panel-item #nav-estatlayout {order: 2; }
+/* dataProductInfoBtn : à propos de cet ensemble de données
+   infobox__buttons : à propos, notes explicatives, etc.
+   dropdownDownload : télécharger
+   right-links : se connecter, langue
+*/
